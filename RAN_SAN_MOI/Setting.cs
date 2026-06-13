@@ -55,6 +55,8 @@ namespace RAN_SAN_MOI
         public static Color MauMoiPhanThan   = Color.Blue;
         public static Color MauMoiKhongLo    = Color.Gold;
         public static Color MauMoiTruDiem    = Color.Black;
+        // =================== USER =====================
+        public static string TenNguoiChoi { get; set; } = "Khách";
         // ===================== BACKGROUND =====================
         public enum LoaiBackground
         {
@@ -92,7 +94,10 @@ namespace RAN_SAN_MOI
         public static string GetFolderNSX()
         {
             return Path.Combine(
-                AppDomain.CurrentDomain.BaseDirectory, "Backgrounds", "NSX");
+                Application.StartupPath,
+                "Backgrounds",
+                "NSX"
+            );
         }
     }
 }

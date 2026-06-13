@@ -42,9 +42,9 @@ namespace RAN_SAN_MOI
             this.btnSound.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSound.BackgroundImage")));
             this.btnSound.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSound.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSound.Location = new System.Drawing.Point(232, 276);
+            this.btnSound.Location = new System.Drawing.Point(215, 277);
             this.btnSound.Name = "btnSound";
-            this.btnSound.Size = new System.Drawing.Size(189, 54);
+            this.btnSound.Size = new System.Drawing.Size(231, 54);
             this.btnSound.TabIndex = 0;
             this.btnSound.UseVisualStyleBackColor = true;
             this.btnSound.Click += new System.EventHandler(this.btnSound_Click);
@@ -53,9 +53,9 @@ namespace RAN_SAN_MOI
             // 
             this.btnLui.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLui.BackgroundImage")));
             this.btnLui.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnLui.Location = new System.Drawing.Point(124, 301);
+            this.btnLui.Location = new System.Drawing.Point(104, 308);
             this.btnLui.Name = "btnLui";
-            this.btnLui.Size = new System.Drawing.Size(71, 67);
+            this.btnLui.Size = new System.Drawing.Size(70, 54);
             this.btnLui.TabIndex = 1;
             this.btnLui.UseVisualStyleBackColor = true;
             this.btnLui.Click += new System.EventHandler(this.btnLui_Click);
@@ -64,9 +64,9 @@ namespace RAN_SAN_MOI
             // 
             this.btnTiep.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTiep.BackgroundImage")));
             this.btnTiep.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTiep.Location = new System.Drawing.Point(450, 301);
+            this.btnTiep.Location = new System.Drawing.Point(499, 308);
             this.btnTiep.Name = "btnTiep";
-            this.btnTiep.Size = new System.Drawing.Size(76, 67);
+            this.btnTiep.Size = new System.Drawing.Size(70, 57);
             this.btnTiep.TabIndex = 2;
             this.btnTiep.UseVisualStyleBackColor = true;
             this.btnTiep.Click += new System.EventHandler(this.btnTiep_Click);
@@ -76,9 +76,9 @@ namespace RAN_SAN_MOI
             this.btnSetting.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSetting.BackgroundImage")));
             this.btnSetting.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSetting.Location = new System.Drawing.Point(232, 420);
+            this.btnSetting.Location = new System.Drawing.Point(215, 370);
             this.btnSetting.Name = "btnSetting";
-            this.btnSetting.Size = new System.Drawing.Size(189, 48);
+            this.btnSetting.Size = new System.Drawing.Size(231, 59);
             this.btnSetting.TabIndex = 3;
             this.btnSetting.UseVisualStyleBackColor = true;
             this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
@@ -88,9 +88,9 @@ namespace RAN_SAN_MOI
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(232, 491);
+            this.button2.Location = new System.Drawing.Point(215, 467);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(189, 46);
+            this.button2.Size = new System.Drawing.Size(231, 60);
             this.button2.TabIndex = 4;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -100,9 +100,9 @@ namespace RAN_SAN_MOI
             this.btnStart.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnStart.BackgroundImage")));
             this.btnStart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStart.Location = new System.Drawing.Point(232, 601);
+            this.btnStart.Location = new System.Drawing.Point(196, 583);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(189, 67);
+            this.btnStart.Size = new System.Drawing.Size(264, 67);
             this.btnStart.TabIndex = 5;
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
@@ -127,6 +127,7 @@ namespace RAN_SAN_MOI
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormSetting";
             this.ResumeLayout(false);
+
         }
 
         #endregion

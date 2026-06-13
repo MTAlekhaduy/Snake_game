@@ -110,6 +110,21 @@ namespace RAN_SAN_MOI
             QuanLyAmThanh.KhoiTao();
             QuanLyAmThanh.PhatNhacNen();
 
+            // Áp dụng background đã chọn
+            if (Setting.BackgroundDangChon != null &&
+                System.IO.File.Exists(Setting.BackgroundDangChon.DuongDanFile))
+            {
+                byte[] data = System.IO.File.ReadAllBytes(Setting.BackgroundDangChon.DuongDanFile);
+                using (var ms = new System.IO.MemoryStream(data))
+                    picGame.BackgroundImage = Image.FromStream(ms);
+
+                picGame.BackgroundImageLayout = ImageLayout.Stretch;
+            }
+            else
+            {
+                picGame.BackgroundImage = null;  // dùng màu BackColor mặc định
+            }
+
             _quanLyVatCan.SinhVatCanMacDinh(oNgang, oDoc);
         
             GameTimer.Interval = 60;
@@ -311,6 +326,8 @@ namespace RAN_SAN_MOI
                 }
                 else
                 {
+                    FormSelectLevelMap f1 = new FormSelectLevelMap();
+                    f1.Show();
                     this.Close();
                 }
             }

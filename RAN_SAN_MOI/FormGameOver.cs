@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,12 +23,12 @@ namespace RAN_SAN_MOI
 
         private void FormGameOver_Load(object sender, EventArgs e)
         {
-           lblHighScore.Text="HIGH SCORE :\n"+"    "+Setting.High_score.ToString();
+        
         }
 
         private void btnYes_Click(object sender, EventArgs e)
         {
-            this.DialogResult= DialogResult.OK;
+            this.DialogResult= DialogResult.Yes;
             this.Close();
         }
 
@@ -36,6 +36,11 @@ namespace RAN_SAN_MOI
         {
             this.DialogResult=DialogResult.No;
             this.Close ();
+        }
+
+        private void lblHighScore_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

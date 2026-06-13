@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -28,10 +28,13 @@ namespace RAN_SAN_MOI
 
         private void FormSelectBackground_Load(object sender, EventArgs e)
         {
-
+            NapTabNSX();
+            NapTabGanNhat();
+            KhoiPhucLuaChonCu();
         }
         private void NapTabNSX()
         {
+
             lstBackgroundNSX.Items.Clear();
             string folder = Setting.GetFolderNSX();
             if (!Directory.Exists(folder))
@@ -287,22 +290,7 @@ namespace RAN_SAN_MOI
 
         private void pnlDangChon_Paint(object sender, PaintEventArgs e)
         {
-            if (_tamChon == null)
-            {
-                MessageBox.Show("Vui lòng chọn 1 background.", "Thông báo",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            // Lưu vào Setting
-            Setting.BackgroundDangChon = _tamChon;
-            Setting.LuuLichSu(_tamChon);
-
-            // Gán ảnh vào picGame của các form game
-            // (form game sẽ tự đọc Setting.BackgroundDangChon khi Load)
-
-            this.DialogResult = DialogResult.OK;
-            this.Close();
+            // Do nothing
         }
 
         private void btnHuy_Click(object sender, EventArgs e)

@@ -58,7 +58,7 @@
             this.btnXacNhan.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnXacNhan.BackgroundImage")));
             this.btnXacNhan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnXacNhan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXacNhan.Location = new System.Drawing.Point(357, 617);
+            this.btnXacNhan.Location = new System.Drawing.Point(356, 618);
             this.btnXacNhan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnXacNhan.Name = "btnXacNhan";
             this.btnXacNhan.Size = new System.Drawing.Size(195, 39);
@@ -71,10 +71,10 @@
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(625, 617);
+            this.button1.Location = new System.Drawing.Point(624, 618);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(196, 39);
+            this.button1.Size = new System.Drawing.Size(195, 39);
             this.button1.TabIndex = 6;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -83,11 +83,10 @@
             // 
             this.btnMauBinhThuong.BackColor = System.Drawing.Color.Red;
             this.btnMauBinhThuong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMauBinhThuong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMauBinhThuong.Location = new System.Drawing.Point(853, 190);
+            this.btnMauBinhThuong.Location = new System.Drawing.Point(837, 180);
             this.btnMauBinhThuong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMauBinhThuong.Name = "btnMauBinhThuong";
-            this.btnMauBinhThuong.Size = new System.Drawing.Size(32, 32);
+            this.btnMauBinhThuong.Size = new System.Drawing.Size(74, 58);
             this.btnMauBinhThuong.TabIndex = 7;
             this.btnMauBinhThuong.UseVisualStyleBackColor = false;
             this.btnMauBinhThuong.Click += new System.EventHandler(this.btnMauBinhThuong_Click);
@@ -96,11 +95,10 @@
             // 
             this.btnMauTraiTim.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnMauTraiTim.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMauTraiTim.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMauTraiTim.Location = new System.Drawing.Point(853, 267);
+            this.btnMauTraiTim.Location = new System.Drawing.Point(837, 255);
             this.btnMauTraiTim.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMauTraiTim.Name = "btnMauTraiTim";
-            this.btnMauTraiTim.Size = new System.Drawing.Size(36, 32);
+            this.btnMauTraiTim.Size = new System.Drawing.Size(74, 58);
             this.btnMauTraiTim.TabIndex = 8;
             this.btnMauTraiTim.UseVisualStyleBackColor = false;
             this.btnMauTraiTim.Click += new System.EventHandler(this.btnMauTraiTim_Click);
@@ -109,11 +107,10 @@
             // 
             this.btnMauPhanThan.BackColor = System.Drawing.Color.Cyan;
             this.btnMauPhanThan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMauPhanThan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMauPhanThan.Location = new System.Drawing.Point(853, 346);
+            this.btnMauPhanThan.Location = new System.Drawing.Point(837, 330);
             this.btnMauPhanThan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMauPhanThan.Name = "btnMauPhanThan";
-            this.btnMauPhanThan.Size = new System.Drawing.Size(36, 32);
+            this.btnMauPhanThan.Size = new System.Drawing.Size(74, 63);
             this.btnMauPhanThan.TabIndex = 9;
             this.btnMauPhanThan.UseVisualStyleBackColor = false;
             this.btnMauPhanThan.Click += new System.EventHandler(this.btnMauPhanThan_Click);
@@ -122,11 +119,10 @@
             // 
             this.btnMauKhongLo.BackColor = System.Drawing.Color.Yellow;
             this.btnMauKhongLo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMauKhongLo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMauKhongLo.Location = new System.Drawing.Point(853, 423);
+            this.btnMauKhongLo.Location = new System.Drawing.Point(837, 415);
             this.btnMauKhongLo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMauKhongLo.Name = "btnMauKhongLo";
-            this.btnMauKhongLo.Size = new System.Drawing.Size(32, 31);
+            this.btnMauKhongLo.Size = new System.Drawing.Size(74, 58);
             this.btnMauKhongLo.TabIndex = 10;
             this.btnMauKhongLo.UseVisualStyleBackColor = false;
             this.btnMauKhongLo.Click += new System.EventHandler(this.btnMauKhongLo_Click);
@@ -135,11 +131,10 @@
             // 
             this.btnMauTruDiem.BackColor = System.Drawing.Color.Black;
             this.btnMauTruDiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMauTruDiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMauTruDiem.Location = new System.Drawing.Point(853, 502);
+            this.btnMauTruDiem.Location = new System.Drawing.Point(837, 492);
             this.btnMauTruDiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMauTruDiem.Name = "btnMauTruDiem";
-            this.btnMauTruDiem.Size = new System.Drawing.Size(36, 34);
+            this.btnMauTruDiem.Size = new System.Drawing.Size(74, 64);
             this.btnMauTruDiem.TabIndex = 11;
             this.btnMauTruDiem.UseVisualStyleBackColor = false;
             this.btnMauTruDiem.Click += new System.EventHandler(this.btnMauTruDiem_Click);
@@ -257,7 +252,7 @@
             this.lblTruDiem.AutoSize = true;
             this.lblTruDiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.lblTruDiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTruDiem.Location = new System.Drawing.Point(795, 512);
+            this.lblTruDiem.Location = new System.Drawing.Point(795, 511);
             this.lblTruDiem.Name = "lblTruDiem";
             this.lblTruDiem.Size = new System.Drawing.Size(24, 25);
             this.lblTruDiem.TabIndex = 21;

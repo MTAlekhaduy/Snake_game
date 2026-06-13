@@ -24,9 +24,13 @@ namespace RAN_SAN_MOI
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
-             FormSetting f = new FormSetting();
+            using (FormDangNhap f = new FormDangNhap())
+            {
+                this.Hide();
+                if (f.ShowDialog() != DialogResult.OK) return;
+            }
             this.Hide();
-            f.Show();
+            new FormSetting().Show();
         }
     }
 }

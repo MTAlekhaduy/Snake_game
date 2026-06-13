@@ -325,7 +325,13 @@ namespace RAN_SAN_MOI
 
             if (Diemso > Setting.High_score)
                 Setting.High_score = Diemso;
-
+            QuanLyDuLieu.LuuDiem(new BanGhiDiem
+            {
+                TenNguoiChoi = Setting.TenNguoiChoi,
+                Diem = Diemso,
+                DoKho = Setting.DoKhoDaChon.ToString(),
+                ThoiGian = DateTime.Now
+            });
             using (FormGameOver f = new FormGameOver())
             {
                 DialogResult kq = f.ShowDialog();
@@ -341,6 +347,8 @@ namespace RAN_SAN_MOI
                 }
                 else 
                 {
+                    FormSelectLevelMap f1 = new FormSelectLevelMap();
+                    f1.Show();
                     this.Close();
                 }
             }

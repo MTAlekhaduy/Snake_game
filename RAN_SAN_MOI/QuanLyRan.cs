@@ -18,7 +18,7 @@ namespace RAN_SAN_MOI
         {
             ThanRan.Clear();
             HuongHienTai = HuongDiChuyen.Phai;
-            for(int i=0;i<4;i++)
+            for (int i = 0; i < 4; i++)
             {
                 ThanRan.Add(new ToaDo(10 - i, 5));
             }
