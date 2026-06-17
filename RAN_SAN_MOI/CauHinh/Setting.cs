@@ -23,8 +23,16 @@ namespace RAN_SAN_MOI
         public static HuongDiChuyen Huong = HuongDiChuyen.Phai;
         public static int High_score = 0;
 
+        // ── Cấu hình vật cản (do FormSetVatCan lưu) ──
+        public enum CheDoVatCan { CoDinh, DiChuyen, NgauNhien }
+        public static CheDoVatCan CheDoVatCanDaChon = CheDoVatCan.NgauNhien;
+
+        public static Color MauVatCanCoDinh   = Color.FromArgb(100, 100, 110); // xám mặc định
+        public static Color MauVatCanDiChuyen = Color.FromArgb(220, 100,  30); 
+        public static int   SoLuongTuongVatCan = 3;                           
+
         // ── Màu rắn ──
-        public static Color MauDauRan = Color.Black;
+        public static Color MauDauRan  = Color.Black;
         public static Color MauThanRan = Color.Black;
 
         // ── Mắt rắn ──
@@ -56,8 +64,9 @@ namespace RAN_SAN_MOI
         public static Color MauMoiTruDiem = Color.Black;
 
         // ── Người chơi ──
-        public static string TenNguoiChoiCu { get; set; } = "";  // nhớ tên lần trước
+        public static string TenNguoiChoiCu { get; set; } = "";  
         public static string TenNguoiChoi { get; set; } = "Khách";
+        public static bool IsCustomSetupFlow = false; // Đánh dấu người chơi chọn luồng tự setup game
 
         // ── Background ──
         public enum LoaiBackground

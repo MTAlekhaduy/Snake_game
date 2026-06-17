@@ -112,7 +112,7 @@ namespace RAN_SAN_MOI
                 QuanLyRan.KhoiTao();
                 QuanLyMoi.SinhMoi(oNgang, oDoc, QuanLyRan.ThanRan);
                 lblDiem.Text = "Điểm Hiện Tại : 0";
-                _quanLyVatCan.SinhVatCanMacDinh(oNgang, oDoc);
+                _quanLyVatCan.SinhVatCanTheoDoKho(Setting.DoKho.Vua, oNgang, oDoc);
             }
 
             if (Setting.BackgroundDangChon != null &&

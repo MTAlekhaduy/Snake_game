@@ -129,7 +129,8 @@ namespace RAN_SAN_MOI
                 QuanLyRan.KhoiTao();
                 QuanLyMoi.SinhMoi(oNgang, oDoc, QuanLyRan.ThanRan);
                 lblDiem.Text = "Điểm Hiện Tại : 0";
-                _quanLyVatCan.SinhVatCanMacDinh(oNgang, oDoc);
+                _quanLyVatCan.SinhVatCanTheoDoKho(Setting.DoKho.Kho, oNgang, oDoc);
+              
             }
 
             QuanLyAmThanh.KhoiTao();
@@ -409,12 +410,11 @@ namespace RAN_SAN_MOI
 
         private void VatCanTimer_Tick(object sender, EventArgs e)
         {
-            _quanLyVatCan.SinhThemMotVatCan(
-      oNgang, oDoc,
-      QuanLyRan.ThanRan,
-      QuanLyMoi.DanhSachMoi
-  );
+            _quanLyVatCan.SinhThemMotVatCanNgauNhien(
+                oNgang, oDoc,
+                QuanLyRan.ThanRan,
+                QuanLyMoi.DanhSachMoi
+            );
         }
     }
 }
-

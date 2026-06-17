@@ -366,8 +366,15 @@ namespace RAN_SAN_MOI
                 }
                 else
                 {
-                    FormSelectLevelMap f1 = new FormSelectLevelMap();
-                    f1.Show();
+                    if (this is FormUserDesign)
+                    {
+                        new FormSetting().Show();
+                    }
+                    else
+                    {
+                        FormSelectLevelMap f1 = new FormSelectLevelMap();
+                        f1.Show();
+                    }
                     this.Close();
                 }
             }
@@ -424,7 +431,14 @@ namespace RAN_SAN_MOI
         {
             GameTimer.Stop();
             QuanLyAmThanh.DungNhacNen();
-            new FormSelectLevelMap().Show();
+            if (this is FormUserDesign)
+            {
+                new FormSetting().Show();
+            }
+            else
+            {
+                new FormSelectLevelMap().Show();
+            }
             this.Close();
         }
         private void button1_Click(object sender, EventArgs e)

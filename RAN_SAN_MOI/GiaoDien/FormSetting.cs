@@ -49,12 +49,31 @@ namespace RAN_SAN_MOI
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            // Vui lòng nhấn nút Tiếp để chọn độ khó rồi cấu hình mồi
-            MessageBox.Show(
-               "Vui lòng nhấn 'Tiếp' để chọn độ khó trước khi vào game!",
-               "Thông Báo",
-               MessageBoxButtons.OK,
-               MessageBoxIcon.Information);
+            DialogResult testSetup = MessageBox.Show(
+        "Bạn có muốn tự thiết lập game (Tự chọn Background, Vật cản, Mồi...) không?",
+        "Xác nhận thiết lập",
+        MessageBoxButtons.YesNo,
+        MessageBoxIcon.Question
+    );
+            if (testSetup == DialogResult.Yes)
+            {
+                // 1. Kích hoạt cờ luồng tự setup
+                Setting.IsCustomSetupFlow = true;
+                // 2. Chuyển sang Form chọn Background đầu tiên
+                FormSelectBackground fBackground = new FormSelectBackground();
+                this.Hide();
+                fBackground.Show();
+            }
+            else
+            {
+                // 3. Nếu chọn NO, quay lại luồng cũ của bạn
+                Setting.IsCustomSetupFlow = false;
+                MessageBox.Show(
+                   "Vui lòng nhấn 'Tiếp' để chọn độ khó trước khi vào game!",
+                   "Thông Báo",
+                   MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)

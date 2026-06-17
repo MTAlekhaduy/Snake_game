@@ -26,32 +26,43 @@ namespace RAN_SAN_MOI
         private void btnXacNhan_Click(object sender, EventArgs e)
         {
             Setting.SoLuongMoiBinhThuong = tbBinhThuong.Value;
-            Setting.SoLuongMoiTraiTim    = tbTraiTim.Value;
-            Setting.SoLuongMoiPhanThan   = tbPhanThan.Value;
-            Setting.SoLuongMoiKhongLo   = tbKhongLo.Value;
-            Setting.SoLuongMoiTruDiem   = tbTruDiem.Value;
-
+            Setting.SoLuongMoiTraiTim = tbTraiTim.Value;
+            Setting.SoLuongMoiPhanThan = tbPhanThan.Value;
+            Setting.SoLuongMoiKhongLo = tbKhongLo.Value;
+            Setting.SoLuongMoiTruDiem = tbTruDiem.Value;
             Setting.MauMoiBinhThuong = btnMauBinhThuong.BackColor;
-            Setting.MauMoiTraiTim    = btnMauTraiTim.BackColor;
-            Setting.MauMoiPhanThan   = btnMauPhanThan.BackColor;
-            Setting.MauMoiKhongLo   = btnMauKhongLo.BackColor;
-            Setting.MauMoiTruDiem   = btnMauTruDiem.BackColor;
-
+            Setting.MauMoiTraiTim = btnMauTraiTim.BackColor;
+            Setting.MauMoiPhanThan = btnMauPhanThan.BackColor;
+            Setting.MauMoiKhongLo = btnMauKhongLo.BackColor;
+            Setting.MauMoiTruDiem = btnMauTruDiem.BackColor;
             Setting.TocDoRan = tbTocDo.Value;
+
             this.Hide();
 
-            // Mở form game theo độ khó người dùng đã chọn
-            switch (Setting.DoKhoDaChon)
+            // KIỂM TRA LUỒNG TỰ SETUP
+            if (Setting.IsCustomSetupFlow)
             {
-                case Setting.DoKho.De:
-                    new FormLoadGame().Show();
-                    break;
-                case Setting.DoKho.Vua:
-                    new FormMapVatCan().Show();
-                    break;
-                case Setting.DoKho.Kho:
-                    new FormMapVatCanlv2().Show();
-                    break;
+                // Reset cờ luồng
+                Setting.IsCustomSetupFlow = false;
+                // Mở màn chơi tự thiết kế
+                FormUserDesign gameCustom = new FormUserDesign();
+                gameCustom.Show();
+            }
+            else
+            {
+                // Luồng chia độ khó mặc định
+                switch (Setting.DoKhoDaChon)
+                {
+                    case Setting.DoKho.De:
+                        new FormLoadGame().Show();
+                        break;
+                    case Setting.DoKho.Vua:
+                        new FormMapVatCan().Show();
+                        break;
+                    case Setting.DoKho.Kho:
+                        new FormMapVatCanlv2().Show();
+                        break;
+                }
             }
         }
 

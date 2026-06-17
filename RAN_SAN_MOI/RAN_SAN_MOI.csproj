@@ -116,11 +116,23 @@
     <Compile Include="GiaoDien\FormSelectLevelMap.Designer.cs">
       <DependentUpon>FormSelectLevelMap.cs</DependentUpon>
     </Compile>
+    <Compile Include="GiaoDien\FormSetVatCan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\FormSetVatCan.Designer.cs">
+      <DependentUpon>FormSetVatCan.cs</DependentUpon>
+    </Compile>
     <Compile Include="GiaoDien\FormSetting.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GiaoDien\FormSetting.Designer.cs">
       <DependentUpon>FormSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiaoDien\FormUserDesign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\FormUserDesign.Designer.cs">
+      <DependentUpon>FormUserDesign.cs</DependentUpon>
     </Compile>
     <Compile Include="LuuTru\IGameRepository.cs" />
     <Compile Include="Moi\Moi.cs" />
@@ -178,6 +190,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GiaoDien\FormSelectLevelMap.resx">
       <DependentUpon>FormSelectLevelMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDien\FormSetVatCan.resx">
+      <DependentUpon>FormSetVatCan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GiaoDien\FormSetting.resx">
       <DependentUpon>FormSetting.cs</DependentUpon>

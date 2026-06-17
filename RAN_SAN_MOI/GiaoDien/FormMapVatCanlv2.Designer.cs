@@ -45,12 +45,13 @@
             // 
             this.picGame.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picGame.BackgroundImage")));
             this.picGame.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picGame.Location = new System.Drawing.Point(13, 183);
+            this.picGame.Location = new System.Drawing.Point(13, 98);
             this.picGame.Margin = new System.Windows.Forms.Padding(4);
             this.picGame.Name = "picGame";
-            this.picGame.Size = new System.Drawing.Size(1289, 657);
+            this.picGame.Size = new System.Drawing.Size(1363, 742);
             this.picGame.TabIndex = 4;
             this.picGame.TabStop = false;
+            this.picGame.UseWaitCursor = true;
             this.picGame.Paint += new System.Windows.Forms.PaintEventHandler(this.picGame_Paint);
             // 
             // btnTamDung
@@ -125,6 +126,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.picGame);
             this.Name = "FormMapVatCanlv2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMapVatCanlv2";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormMapVatCanlv2_FormClosed);
             this.Load += new System.EventHandler(this.FormMapVatCanlv2_Load);

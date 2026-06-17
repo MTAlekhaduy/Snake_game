@@ -350,17 +350,23 @@ namespace RAN_SAN_MOI
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-
             // Lưu vào Setting
             Setting.BackgroundDangChon = _tamChon;
             Setting.LuuLichSu(_tamChon);
-
-            // Gán ảnh vào picGame của các form game
-            // (form game sẽ tự đọc Setting.BackgroundDangChon khi Load)
-
             this.DialogResult = DialogResult.OK;
-            FormSetting f = new FormSetting();
-            f.Show();
+            // KIỂM TRA LUỒNG SETUP:
+            if (Setting.IsCustomSetupFlow)
+            {
+                // Chuyển sang màn hình cấu hình Vật Cản
+                FormSetVatCan fVatCan = new FormSetVatCan();
+                fVatCan.Show();
+            }
+            else
+            {
+                // Luồng cũ: Trở lại màn hình Setting
+                FormSetting f = new FormSetting();
+                f.Show();
+            }
             this.Close();
 
         }
@@ -371,6 +377,26 @@ namespace RAN_SAN_MOI
         }
 
         private void lblTenGanNhat_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rdoStretch_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tpMayTinh_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tpInternet_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tpNhaSX_Click(object sender, EventArgs e)
         {
 
         }

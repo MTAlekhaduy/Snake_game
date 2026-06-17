@@ -140,6 +140,7 @@
             this.Controls.Add(this.panelHeader);
             this.Controls.Add(this.panel1);
             this.Name = "FormMapVatCan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMapVatCan";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormMapVatCan_FormClosed);
             this.Load += new System.EventHandler(this.FormMapVatCan_Load);

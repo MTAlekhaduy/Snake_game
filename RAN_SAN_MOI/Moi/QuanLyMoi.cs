@@ -68,7 +68,7 @@ namespace RAN_SAN_MOI
         }
 
         // ── Kiểm tra và lấy mồi bị ăn ────────────────────────────────────
-       
+
         public Moi KiemTraVaLayMoi(ToaDo dauRan)
         {
             Moi moiBiAn = null;
@@ -99,8 +99,6 @@ namespace RAN_SAN_MOI
 
             return moiBiAn;
         }
-
-        // ── Tìm vị trí ô trống không trùng rắn hay mồi khác ──────────────
         private ToaDo TimViTriHopLe(int oNgang, int oDoc, List<ToaDo> thanRan)
         {
             int panelRows = (int)Math.Ceiling(49.0 / Setting.Cao);
